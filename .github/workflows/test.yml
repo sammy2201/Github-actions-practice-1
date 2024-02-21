@@ -16,6 +16,7 @@ jobs:
       - name: Test
         run: npm test
   Build:
+    needs: LintAndTest
     runs-on: ubuntu-latest
     steps:
       - name: Get code
